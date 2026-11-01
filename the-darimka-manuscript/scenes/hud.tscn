@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://svc45g25xu7d"]
+
+[ext_resource type="PackedScene" uid="uid://c3b1ukth42gj6" path="res://scenes/dialogue.tscn" id="1_ahhtf"]
+
+[node name="HUD" type="CanvasLayer" unique_id=1900606127]
+process_mode = 3
+
+[node name="DialogueUI" parent="." unique_id=708353678 instance=ExtResource("1_ahhtf")]
+visible = false

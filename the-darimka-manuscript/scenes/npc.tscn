@@ -1,0 +1,51 @@
+[gd_scene format=3 uid="uid://d2e51quq536aw"]
+
+[ext_resource type="Script" uid="uid://b7n30bfujnb2k" path="res://scripts/npc.gd" id="1_nh2m4"]
+[ext_resource type="Texture2D" uid="uid://cd5amkugjbjyh" path="res://art/primordial_soup_blue.png" id="2_abqhh"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_tcuxl"]
+radius = 31.0
+height = 258.0
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_nh2m4"]
+radius = 229.49074
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_rv78h"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_abqhh")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="CharacterBody2D" type="CharacterBody2D" unique_id=834509832]
+process_mode = 3
+script = ExtResource("1_nh2m4")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1686998252]
+position = Vector2(0, 30)
+shape = SubResource("CapsuleShape2D_tcuxl")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=2025585755]
+visible = false
+offset_left = -10.0
+offset_top = -27.0
+offset_right = 10.0
+offset_bottom = 27.0
+color = Color(0, 0.40784314, 1, 1)
+
+[node name="Area2D" type="Area2D" parent="." unique_id=1792240403]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=1668384317]
+shape = SubResource("CircleShape2D_nh2m4")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1805438328]
+position = Vector2(0, -5.9999995)
+scale = Vector2(0.25, 0.25)
+sprite_frames = SubResource("SpriteFrames_rv78h")
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
+[connection signal="body_exited" from="Area2D" to="." method="_on_area_2d_body_exited"]

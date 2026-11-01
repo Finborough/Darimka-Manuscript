@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://6by0pmm2bjcq"
+path="res://.godot/imported/terina.dialogue-7809d4f1a34a7d1e521697fee2618e99.tres"
+
+[deps]
+
+source_file="res://dialogue/terina.dialogue"
+dest_files=["res://.godot/imported/terina.dialogue-7809d4f1a34a7d1e521697fee2618e99.tres"]
+
+[params]
+
+defaults=true

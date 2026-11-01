@@ -1,0 +1,34 @@
+~ start
+Char: Wassup.
+=> END 
+
+~ name
+Char: I'm Char.
+=> END
+
+~ age
+Char: I'm 25.
+=> END
+
+~ job
+Char: I'm unemployed.
+Char: Just like you!
+=> END
+
+~ hi
+=> start
+
+~ book
+Char: Looks interesting, but I don
+
+~ bye
+Char: See you.
+do Global.bye()
+=> END
+
+~ unknown
+Char: Sorry, can't help you with that.
+=> END
+
+~ END
+do Global.focus_line_edit()

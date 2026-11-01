@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://d4ddwtds2aswl"
+path="res://.godot/imported/olst_salme.dialogue-0ae87865b7432751684f76fe1d72060c.tres"
+
+[deps]
+
+source_file="res://dialogue/olst_salme.dialogue"
+dest_files=["res://.godot/imported/olst_salme.dialogue-0ae87865b7432751684f76fe1d72060c.tres"]
+
+[params]
+
+defaults=true

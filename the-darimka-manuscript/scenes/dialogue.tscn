@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://c3b1ukth42gj6"]
+
+[ext_resource type="Script" uid="uid://chqdkaqj8gj7t" path="res://scripts/dialogue.gd" id="1_jwyou"]
+
+[node name="DialogueUI" type="Control" unique_id=708353678]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_jwyou")
+
+[node name="LineEdit" type="LineEdit" parent="." unique_id=1958420622]
+layout_mode = 0
+offset_left = 271.0
+offset_top = 464.0
+offset_right = 905.0
+offset_bottom = 613.0
+placeholder_text = "Enter keyword..."
+
+[connection signal="text_submitted" from="LineEdit" to="." method="_on_line_edit_text_submitted"]

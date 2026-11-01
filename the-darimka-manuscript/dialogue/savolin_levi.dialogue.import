@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://bxji484dieovm"
+path="res://.godot/imported/savolin_levi.dialogue-65ed41c0df9762435496a291d4de90d2.tres"
+
+[deps]
+
+source_file="res://dialogue/savolin_levi.dialogue"
+dest_files=["res://.godot/imported/savolin_levi.dialogue-65ed41c0df9762435496a291d4de90d2.tres"]
+
+[params]
+
+defaults=true

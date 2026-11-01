@@ -1,0 +1,44 @@
+[gd_scene format=3 uid="uid://clribct0iml6q"]
+
+[ext_resource type="Script" uid="uid://dhfo554wlab4p" path="res://scripts/player.gd" id="1_4flbx"]
+[ext_resource type="Texture2D" uid="uid://dwoh1mo0idns0" path="res://art/primordial_soup.png" id="2_g2els"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_sh265"]
+radius = 26.0
+height = 264.0
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_qhqgy"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_g2els")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="CharacterBody2D" type="CharacterBody2D" unique_id=526348740 groups=["player"]]
+script = ExtResource("1_4flbx")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1560398430]
+position = Vector2(0, 28)
+shape = SubResource("CapsuleShape2D_sh265")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1177486575]
+visible = false
+offset_left = -13.0
+offset_top = -33.0
+offset_right = 14.0
+offset_bottom = 30.0
+color = Color(0.89411765, 0.21176471, 0.3019608, 1)
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1429786395]
+zoom = Vector2(0.3, 0.3)
+position_smoothing_enabled = true
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=52746757]
+texture_filter = 2
+position = Vector2(0, -3.9999998)
+scale = Vector2(0.25, 0.25)
+sprite_frames = SubResource("SpriteFrames_qhqgy")

@@ -1,0 +1,51 @@
+~ start
+Salme Olst: How can I help you?
+=> END
+
+~ hi
+Salme Olst: Well hello.
+
+~ book
+Rosana: Where did you get this from?
+Salme Olst: Oh...I can't remember for sure.
+Salme Olst: It could've been from an estate.
+=> END
+
+~ estate
+Salme Olst: Recent ones were the one of old Mr. Harkola, and the one of Mr. Celin, bless their souls.
+Salme Olst: Those are the only ones I remember having any books.
+=> END
+
+~ harkola
+Salme Olst: The Harkola farm is still owned by his family.
+Salme Olst: They're very hospitable, give them a visit some time.
+=> END
+
+~ celin
+Salme Olst: Mr. Celin...he was a strange man. Maybe he was just shy.  
+=> END
+
+~ levi
+Salme Olst: He takes good care of the community.
+=> END
+
+~ ella
+Salme Olst: Oh, Ella. She stops by sometimes...
+
+~ church
+=> pastor
+
+~ pastor
+=> levi
+
+~ unknown
+Salme Olst: I can't help with that, sorry...
+=> END
+
+~ bye
+Salme Olst: See you later.
+do Global.bye()
+=> END
+
+~ END
+do Global.focus_line_edit()

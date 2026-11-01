@@ -1,0 +1,82 @@
+~ start
+Espen Tannerla: Good day, ma'am.
+Rosana: Doctor.
+Espen Tannerla: Right. Apologies. 
+=> END
+
+~ hi
+=> start
+
+~ book
+Rosana: I found this from the thrift store.
+Espen Tannerla: ...
+Espen Tannerla: I can't believe it.
+Rosana: How come?
+Espen Tannerla: We have a page from this manuscript on exhibition. I had no idea the actual codex has survived.
+Rosana: Do you recognise the language?
+Espen Tannerla: No. But it seems like it has pictures as well.
+Espen Tannerla: I would be delighted if you let me study it.
+Rosana: I'm perfectly qualified for that task myself, thank you very much.
+Espen Tannerla: Fair enough...I hope we can cooperate. It's an important piece of the history of Ramola.
+=> END
+
+~ ramola
+Espen Tannerla: The first people to inhabit the region arrived thousands of years ago.
+Espen Tannerla: Not much is known about them, except that they disappeared somewhere around the early 12th century.
+Espen Tannerla: They might've been an ancient Rukami tribe that was forced to migrate Eastward by Osmekian expansion.
+Espen Tannerla: However, they were illiterate.
+=> END
+
+
+
+~ rukami
+Espen Tannerla: Don't you know? Those natives with dark red hair and tan skin.
+Espen Tannerla: The Rukami are associated with witchcraft, and Ramola has a lot of sites indicating such activity.  
+Espen Tannerla: Nowadays they mostly live on the East coast, but they might've lived further West centuries ago.
+=> END
+
+~ curator
+=> museum
+
+~ manor
+=> museum
+
+~ museum
+Espen Tannerla: This place used to be the manor of the Kamisvik family in the 17th century.
+=> END
+
+~ kamisvik
+Espen Tannerla: The Kamisviks were a wealthy noble family who governed the region for a couple hundred years. 
+Espen Tannerla: We don't really know for sure what happened to them. The only daughter of the last family died before 20.   
+=> END
+
+~ daughter
+Espen Tannerla: Her name has been completely erased from the records. 
+Espen Tannerla: We only know of her existence because of the family portrait.
+=> END
+
+~ espen
+=> tannerla
+
+~ tannerla
+Espen Tannerla: That's me.
+=> END
+
+~ church
+=> pastor
+
+~ pastor
+Espen Tannerla: I don't go to church very often.
+=> END
+
+~ unknown
+Espen Tannerla: Hmm. No, I don't know about that. 
+=> END
+
+~ bye
+Espen Tannerla: Farewell.
+do Global.bye()
+=> END
+
+~ END
+do Global.focus_line_edit()

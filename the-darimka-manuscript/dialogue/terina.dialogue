@@ -1,0 +1,51 @@
+~ start
+???: Hey, blue-eyes!
+Rosana: Hello?
+=> END
+
+~ hi
+???: How now?
+Rosana: ...Good?
+=> END
+
+~ book
+Rosana: Do you happen to know what this is, miss?
+???: A terrible book! What will you do with it?
+Rosana: I'm...studying where it's from. I'm a historian.
+???: A historian! Oh, what makes you different to those before ye?
+Rosana: Excuse me? Do you know something about the book?
+???: Oh, blue-eyes! It is not a mere book, is it?
+Rosana: I don't understand.
+???: You will. Go check the manor's basement!
+=> END
+
+~ manor
+???: It's the big yellow house. You know the one!
+=> END
+
+~ terina
+=> kamisvik
+
+~ kamisvik
+???: Sounds familiar! I wonder who that is.
+=> END
+
+~ cellar
+=> basement
+
+~ basement
+Rosana: The manor has a basement?
+???: Of course it does! Every manor has a basement.
+=> END
+
+~ unknown
+???: What? Who? Sounds boring!
+=> END
+
+~ bye
+???: We'll meet again, blue-eyes!
+do Global.bye()
+=> END
+
+~ END
+do Global.focus_line_edit()

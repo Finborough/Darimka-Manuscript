@@ -1,0 +1,71 @@
+[gd_scene format=3 uid="uid://bioxqjn54cy13"]
+
+[ext_resource type="PackedScene" uid="uid://d2e51quq536aw" path="res://scenes/npc.tscn" id="2_4wyf3"]
+[ext_resource type="Resource" uid="uid://bxji484dieovm" path="res://dialogue/savolin_levi.dialogue" id="2_71j4m"]
+[ext_resource type="PackedScene" uid="uid://svc45g25xu7d" path="res://scenes/hud.tscn" id="3_k0juu"]
+[ext_resource type="PackedScene" uid="uid://clribct0iml6q" path="res://scenes/player.tscn" id="4_k0juu"]
+[ext_resource type="Resource" uid="uid://bveeqvfcht2m2" path="res://dialogue/savolin_ella.dialogue" id="5_71j4m"]
+[ext_resource type="Resource" uid="uid://d4ddwtds2aswl" path="res://dialogue/olst_salme.dialogue" id="5_qfnet"]
+[ext_resource type="Resource" uid="uid://6by0pmm2bjcq" path="res://dialogue/terina.dialogue" id="7_i7141"]
+
+[node name="World" type="Node2D" unique_id=1503744118]
+y_sort_enabled = true
+
+[node name="CharacterBody2D" parent="." unique_id=834509832 instance=ExtResource("2_4wyf3")]
+position = Vector2(-322, -62)
+dialogue_resource = ExtResource("2_71j4m")
+
+[node name="HUD" parent="." unique_id=1900606127 instance=ExtResource("3_k0juu")]
+
+[node name="CharacterBody2D2" parent="." unique_id=526348740 instance=ExtResource("4_k0juu")]
+position = Vector2(1086, 25)
+
+[node name="CharacterBody2D3" parent="." unique_id=1416329706 instance=ExtResource("2_4wyf3")]
+position = Vector2(1399, -40)
+dialogue_resource = ExtResource("5_qfnet")
+
+[node name="CharacterBody2D4" parent="." unique_id=1726745047 instance=ExtResource("2_4wyf3")]
+position = Vector2(91, -50)
+dialogue_resource = ExtResource("5_71j4m")
+
+[node name="CharacterBody2D5" parent="." unique_id=157341528 instance=ExtResource("2_4wyf3")]
+position = Vector2(754, -651)
+dialogue_resource = ExtResource("7_i7141")
+
+[node name="Label" type="Label" parent="." unique_id=1580552110]
+offset_left = 1392.0
+offset_top = 337.0
+offset_right = 2104.0
+offset_bottom = 431.0
+theme_override_font_sizes/font_size = 32
+text = "Ask them first about \"book\"
+
+If a character says something interesting,
+ask about that word"
+
+[node name="Label4" type="Label" parent="." unique_id=1875732983]
+offset_left = 787.0
+offset_top = 324.0
+offset_right = 1499.0
+offset_bottom = 465.0
+theme_override_font_sizes/font_size = 32
+text = "WASD to move
+E to interact
+Esc or \"bye\" to exit dialogue"
+
+[node name="Label2" type="Label" parent="." unique_id=192654415]
+offset_left = 1320.0
+offset_top = -359.0
+offset_right = 2032.0
+offset_bottom = -265.0
+theme_override_font_sizes/font_size = 32
+text = "Thrift Store
+"
+
+[node name="Label3" type="Label" parent="." unique_id=1480095898]
+offset_left = -166.0
+offset_top = -437.0
+offset_right = 546.0
+offset_bottom = -343.0
+theme_override_font_sizes/font_size = 32
+text = "Clergy House"

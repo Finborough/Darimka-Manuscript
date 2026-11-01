@@ -1,0 +1,66 @@
+~ start
+Pastor Levi: Greetings. 
+=> END
+
+~ hi
+=> start
+
+~ book
+Rosana: I found this from the thrift store.
+Pastor Levi: Huh...that's strange.
+Rosana: Do you know the language?
+Pastor Levi: Heavens, no...Wait. I've seen this somewhere.
+Rosana: Yes?
+Pastor Levi: The museum. They're displaying a page in a similar language.
+Pastor Levi: I never thought there was an entire book. Incredible find.
+Pastor Levi: Maybe the museum curator knows something.
+Rosana: Thanks.
+=> END
+
+~ curator
+=> museum
+
+~ museum
+Pastor Levi: The old Kamisvik manor, remember? 
+Pastor Levi: It has a new curator, Espen Tannerla. 
+
+~ espen
+=> tannerla
+
+~ tannerla
+Pastor Levi: He never comes to church, so I don't know him well.
+Pastor Levi: He likes to keep to himself.
+=> END
+
+~ ella
+Pastor Levi: Every day with Ella is a blessing.
+Rosana: That's sweet of you.
+Pastor Levi: The secret to a happy marriage is friendship and understanding.
+Pastor Levi: And being sweet, sometimes.
+=> END
+
+~ church
+=> pastor
+
+~ pastor
+Pastor Levi: I'm the only priest of this parish. My son isn't as enthusiastic about priesthood as I had hoped.
+=> END
+
+~ julia
+Pastor Levi: Who?
+Rosana: Your maid.
+Pastor Levi: Oh, her. I keep forgetting she exists. 
+Pastor Levi: That's a good quality in a maid.
+=> END
+
+~ unknown
+Pastor Levi: I can't help with that, sorry.
+=> END
+
+~ bye
+Pastor Levi: May God bless you.
+do Global.bye()
+=> END
+
+~ END
+do Global.focus_line_edit()

@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://cwabfnnl1rokv"
+path="res://.godot/imported/tannerla_espen.dialogue-3d83fb2ae23ab3d7f5fb8e6a4d1a2d36.tres"
+
+[deps]
+
+source_file="res://dialogue/tannerla_espen.dialogue"
+dest_files=["res://.godot/imported/tannerla_espen.dialogue-3d83fb2ae23ab3d7f5fb8e6a4d1a2d36.tres"]
+
+[params]
+
+defaults=true

@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://bveeqvfcht2m2"
+path="res://.godot/imported/savolin_ella.dialogue-c0b6f081ce0cd7dc771b468633942537.tres"
+
+[deps]
+
+source_file="res://dialogue/savolin_ella.dialogue"
+dest_files=["res://.godot/imported/savolin_ella.dialogue-c0b6f081ce0cd7dc771b468633942537.tres"]
+
+[params]
+
+defaults=true

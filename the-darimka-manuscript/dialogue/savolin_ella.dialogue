@@ -1,0 +1,43 @@
+~ start
+Aunt Ella: Oh hi there, darling!
+=> END
+
+~ hi
+Aunt Ella: Hi!
+
+~ book
+Rosana: I found this from the thrift store.
+Aunt Ella: Oh! Looks interesting! You should ask Levi about it.
+Rosana: Thanks.
+=> END
+
+~ levi
+Aunt Ella: Your uncle, Pastor Levi! Don't say you've forgotten about him!
+Rosana: I haven't been here in years.
+Aunt Ella: You should visit more often!
+=> END
+
+~ church
+=> pastor
+
+~ pastor
+Aunt Ella: Levi is still the vicar, yes. He spends most of his time at the church.
+=> END
+
+~ julia
+Aunt Ella: Don't you remember her?
+Rosana: Not really.
+Aunt Ella: Oh well, a good maid is invisible. [wave]He he he!
+=> END
+
+~ unknown
+Aunt Ella: I can't say, sorry!
+=> END
+
+~ bye
+Aunt Ella: Have a nice day!
+do Global.bye()
+=> END
+
+~ END
+do Global.focus_line_edit()
