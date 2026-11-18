@@ -23,7 +23,10 @@ PauseManager="*uid://b4utbtm6eo42a"
 
 [display]
 
+window/size/viewport_width=2560
+window/size/viewport_height=1440
 window/stretch/mode="canvas_items"
+window/hdr_2d=false
 
 [editor_plugins]
 
@@ -70,4 +73,7 @@ common/physics_interpolation=true
 [rendering]
 
 rendering_device/driver.windows="d3d12"
-environment/defaults/default_clear_color=Color(0.05490196, 0.05490196, 0.05490196, 1)
+viewport/hdr_2d=true
+anti_aliasing/quality/msaa_2d=3
+anti_aliasing/quality/use_debanding=true
+environment/defaults/default_clear_color=Color(0.65882355, 0.56078434, 0.53333336, 1)

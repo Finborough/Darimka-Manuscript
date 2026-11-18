@@ -368,6 +368,8 @@ func __init():
 	
 	if Vector2(_slot_1.size) != target_page_size:
 		_apply_new_size()
+	
+	_apply_new_size()
 
 
 func __ensure_node(target_name: String, type: Variant, parent_node: Node) -> Node:
@@ -393,7 +395,9 @@ func _exit_tree() -> void:
 
 
 func _ready():
+	
 	BookAPI.set_current_book(self)
+	__init()
 	if not _slot_1: _slot_1 = find_child("Slot1", true, false)
 	if not _slot_2: _slot_2 = find_child("Slot2", true, false)
 	if not _slot_3: _slot_3 = find_child("Slot3", true, false)
@@ -668,10 +672,10 @@ func _fit_camera_to_book():
 	var required_height = total_book_height * margin
 	var screen_size = get_viewport_rect().size
 	if screen_size == Vector2.ZERO: return
-	var zoom_x = screen_size.x / required_width
-	var zoom_y = screen_size.y / required_height
+	var zoom_x = screen_size.x # / required_width
+	var zoom_y = screen_size.y #/ required_height
 	var final_zoom = min(zoom_x, zoom_y)
-	cam.zoom = Vector2(final_zoom, final_zoom)
+	cam.zoom = Vector2(final_zoom, final_zoom) / 2
 
 
 func _build_spine():

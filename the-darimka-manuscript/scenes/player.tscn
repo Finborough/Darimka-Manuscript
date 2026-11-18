@@ -1,24 +1,131 @@
 [gd_scene format=3 uid="uid://clribct0iml6q"]
 
 [ext_resource type="Script" uid="uid://dhfo554wlab4p" path="res://scripts/player.gd" id="1_4flbx"]
-[ext_resource type="Texture2D" uid="uid://dwoh1mo0idns0" path="res://art/primordial_soup.png" id="2_g2els"]
+[ext_resource type="Shader" uid="uid://clv0uqrf33lt2" path="res://scenes/lineboil.gdshader" id="2_a38lo"]
+[ext_resource type="Texture2D" uid="uid://c4ku7b163acvy" path="res://art/rosana/frame0016.png" id="2_jej6c"]
+[ext_resource type="Texture2D" uid="uid://b8pc7frp8jxvq" path="res://art/rosana/frame0018.png" id="3_f1ej7"]
+[ext_resource type="Texture2D" uid="uid://dtu38q2nukri8" path="res://art/rosana/frame0020.png" id="4_oprun"]
+[ext_resource type="Texture2D" uid="uid://20f7bu7ttkqe" path="res://art/rosana/frame0022.png" id="5_a8ls1"]
+[ext_resource type="Texture2D" uid="uid://bauqbe0qj53h3" path="res://art/rosana/frame0032.png" id="6_i4ail"]
+[ext_resource type="Texture2D" uid="uid://clavayf7qs8rj" path="res://art/rosana/frame0000.png" id="6_qfm1y"]
+[ext_resource type="Texture2D" uid="uid://f3sv80m88y8" path="res://art/rosana/frame0034.png" id="7_a38lo"]
+[ext_resource type="Texture2D" uid="uid://c7d66kmfk6fe0" path="res://art/rosana/frame0002.png" id="7_fulsm"]
+[ext_resource type="Texture2D" uid="uid://0guusl51l0hx" path="res://art/rosana/frame0036.png" id="8_4ni07"]
+[ext_resource type="Texture2D" uid="uid://he87c0t3d4hm" path="res://art/rosana/frame0004.png" id="8_4r5pv"]
+[ext_resource type="Texture2D" uid="uid://cyfj8nemvk0lc" path="res://art/rosana/frame0006.png" id="9_60mlk"]
+[ext_resource type="Texture2D" uid="uid://pa48plqp0jx1" path="res://art/rosana/frame0038.png" id="9_l71n6"]
+[ext_resource type="Texture2D" uid="uid://cfusbf05wdy53" path="res://art/rosana/frame0008.png" id="10_i4ail"]
+[ext_resource type="Texture2D" uid="uid://doykhyurtuh4k" path="res://art/rosana/frame0024.png" id="10_ke2ow"]
+[ext_resource type="Texture2D" uid="uid://dsdomdxrmorac" path="res://art/rosana/frame0010.png" id="11_a38lo"]
+[ext_resource type="Texture2D" uid="uid://bt6dv5tflkje4" path="res://art/rosana/frame0026.png" id="11_ujl30"]
+[ext_resource type="Texture2D" uid="uid://cgi4k3m6mjchl" path="res://art/rosana/frame0012.png" id="12_4ni07"]
+[ext_resource type="Texture2D" uid="uid://dwe6086kbqk7u" path="res://art/rosana/frame0028.png" id="12_31cv2"]
+[ext_resource type="Texture2D" uid="uid://c3aq5u2ruk8en" path="res://art/rosana/frame0014.png" id="13_l71n6"]
+[ext_resource type="Texture2D" uid="uid://b7xym6n6gofo2" path="res://art/rosana/frame0030.png" id="13_pf23h"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_sh265"]
 radius = 26.0
 height = 264.0
 
+[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_a38lo"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_4ni07"]
+shader = ExtResource("2_a38lo")
+shader_parameter/scale = Vector2(50, 50)
+shader_parameter/strength = 0.0
+shader_parameter/fps = 6.0
+shader_parameter/noise = SubResource("NoiseTexture2D_a38lo")
+shader_parameter/line_color = Vector4(0, 0, 0, 10)
+
 [sub_resource type="SpriteFrames" id="SpriteFrames_qhqgy"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("2_g2els")
+"texture": ExtResource("3_f1ej7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_oprun")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_a8ls1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_jej6c")
 }],
 "loop": true,
-"name": &"default",
-"speed": 5.0
+"name": &"walk_e",
+"speed": 7.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("7_a38lo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_4ni07")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_l71n6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_i4ail")
+}],
+"loop": true,
+"name": &"walk_n",
+"speed": 7.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("11_ujl30")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_31cv2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_pf23h")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_ke2ow")
+}],
+"loop": true,
+"name": &"walk_ne",
+"speed": 7.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("7_fulsm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_4r5pv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_60mlk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_qfm1y")
+}],
+"loop": true,
+"name": &"walk_s",
+"speed": 7.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("11_a38lo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_4ni07")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_l71n6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_i4ail")
+}],
+"loop": true,
+"name": &"walk_se",
+"speed": 7.0
 }]
 
-[node name="CharacterBody2D" type="CharacterBody2D" unique_id=526348740 groups=["player"]]
+[node name="Player" type="CharacterBody2D" unique_id=526348740 groups=["player"]]
 script = ExtResource("1_4flbx")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1560398430]
@@ -34,11 +141,13 @@ offset_bottom = 30.0
 color = Color(0.89411765, 0.21176471, 0.3019608, 1)
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=1429786395]
+position = Vector2(-4158, -3089)
 zoom = Vector2(0.3, 0.3)
 position_smoothing_enabled = true
+position_smoothing_speed = 1.305
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=52746757]
-texture_filter = 2
-position = Vector2(0, -3.9999998)
-scale = Vector2(0.25, 0.25)
+material = SubResource("ShaderMaterial_4ni07")
+position = Vector2(-1, -3.9999998)
 sprite_frames = SubResource("SpriteFrames_qhqgy")
+animation = &"walk_se"

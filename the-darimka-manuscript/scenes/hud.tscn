@@ -1,9 +1,42 @@
 [gd_scene format=3 uid="uid://svc45g25xu7d"]
 
 [ext_resource type="PackedScene" uid="uid://c3b1ukth42gj6" path="res://scenes/dialogue.tscn" id="1_ahhtf"]
+[ext_resource type="Script" uid="uid://ctw83iqgqxjjt" path="res://addons/PageFlip/page_flip.gd" id="2_oo0fn"]
+[ext_resource type="Texture2D" uid="uid://cen51wqc15b14" path="res://addons/PageFlip/Assets/blank_page.png" id="3_0i1j5"]
+[ext_resource type="Texture2D" uid="uid://cit41jypw2sy1" path="res://addons/PageFlip/Assets/spine.png" id="4_mphia"]
+[ext_resource type="AudioStream" uid="uid://bhitebdghyhua" path="res://addons/PageFlip/Assets/book_impact.ogg" id="5_0m4u7"]
+[ext_resource type="AudioStream" uid="uid://bylfc3b5pmbij" path="res://addons/PageFlip/Assets/page_flip.ogg" id="6_apjy4"]
+[ext_resource type="Texture2D" uid="uid://dbdwbowx32d3v" path="res://addons/PageFlip/Assets/front.png" id="7_5n1hp"]
+[ext_resource type="Texture2D" uid="uid://dt1tiecgw5rip" path="res://addons/PageFlip/Assets/interior.png" id="8_eld54"]
+[ext_resource type="Texture2D" uid="uid://bjowpx1ap4uxt" path="res://addons/PageFlip/Assets/back.png" id="9_3swnk"]
 
 [node name="HUD" type="CanvasLayer" unique_id=1900606127]
 process_mode = 3
 
 [node name="DialogueUI" parent="." unique_id=708353678 instance=ExtResource("1_ahhtf")]
 visible = false
+
+[node name="PageFlip2D" type="Node2D" parent="." unique_id=1851773548 node_paths=PackedStringArray("visuals_container", "static_left", "static_right", "dynamic_poly", "anim_player", "audio_player")]
+position = Vector2(484, 310)
+script = ExtResource("2_oo0fn")
+visuals_container = NodePath("Visual")
+static_left = NodePath("Visual/StaticPageLeft")
+static_right = NodePath("Visual/StaticPageRight")
+dynamic_poly = NodePath("Visual/DynamicFlipPoly")
+anim_player = NodePath("AnimationPlayer")
+blank_page_texture = ExtResource("3_0i1j5")
+spine_texture = ExtResource("4_mphia")
+spine_width = 12.0
+closed_scale = Vector2(1, 1)
+min_layers = 1
+volume_color = Color(0.6509804, 0.5921569, 0.56078434, 1)
+sfx_book_impact = ExtResource("5_0m4u7")
+sfx_page_flip = ExtResource("6_apjy4")
+audio_player = NodePath("AudioStreamPlayer")
+target_page_size = Vector2(256, 410)
+pages_paths = Array[String](["uid://dbdwbowx32d3v", "uid://cen51wqc15b14", "uid://cen51wqc15b14", "uid://bjowpx1ap4uxt"])
+tex_cover_front_out = ExtResource("7_5n1hp")
+tex_cover_front_in = ExtResource("8_eld54")
+tex_cover_back_in = ExtResource("8_eld54")
+tex_cover_back_out = ExtResource("9_3swnk")
+metadata/_custom_type_script = "uid://ctw83iqgqxjjt"
